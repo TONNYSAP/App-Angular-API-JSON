@@ -1,0 +1,49 @@
+<div class="container">
+      <div  >
+
+        <fieldset>
+          <legend>Registre a sua foto aqui:</legend>
+          <div class="mb-3">
+            <label for="type" class="form-label">Tipo</label>
+            <select  id="type" class="form-select" [(ngModel)]="post.type">
+              <option></option>
+              <option id="1">pessoas</option>
+              <option id="2">animais</option>
+              <option id="3">natureza</option>
+              <option id="4">galáxia</option>
+              <option id="5">outros</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="title" class="form-label">Título</label>
+            <input [(ngModel)]="post.title" type="text" id="title" class="form-control"  placeholder="Coloque título">
+          </div>
+          <div class="mb-3">
+            <label for="author" class="form-label">Autor</label>
+            <input [(ngModel)]="post.author" type="text" id="author" class="form-control"  placeholder="Autor">
+          </div>
+          <div class="mb-3">
+            <label for="UrlPhoto" class="form-label">URL da foto</label>
+            <input [(ngModel)]="post.UrlPhoto" type="text" id="UrlPhoto" class="form-control"  placeholder="URL da foto">
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Concordo com os termos de uso
+              </label>
+            </div>
+          </div>
+          <button type="button" (click)="savePost()" class="btn btn-primary">Submeter</button>
+        </fieldset>
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+</div>

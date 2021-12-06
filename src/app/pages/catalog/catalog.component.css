@@ -1,0 +1,9 @@
+.del {
+    position: absolute;
+    margin-left: 92%;
+
+    z-index: 1;
+}
+.card-img-top {
+    z-index: 0;
+}

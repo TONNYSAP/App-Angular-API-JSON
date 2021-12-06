@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="row row-cols-1 row-cols-md-3 mt-3 g-4">
+
+        <div class="col" *ngFor="let post of posts">
+
+          <div class="card" >
+            <span class="del"><button (click)="deletePost(post)" class="btn btn-danger">X</button></span>
+            <img [src]="post.UrlPhoto" class="card-img-top" alt="fotos">
+            <div class="card-body">
+              <span>{{ post.id }}</span><h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-author"><i>{{ post.author }}</i></p>
+            </div>
+          </div>
+
+        </div>
+        
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

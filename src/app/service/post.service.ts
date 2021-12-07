@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment.prod';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Post } from '../models/Post';
 import { Injectable } from '@angular/core';
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class PostService {
 
-  url = 'http://localhost:3004/posts';
+  url = environment.URL;
 
   constructor(private http: HttpClient) { }
 
